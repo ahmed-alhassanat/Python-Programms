@@ -1,41 +1,5 @@
 
 
-
-
-'''
-MASTER YODA: Given a sentence, return a sentence with the words reversed
-'''
-def master_yoda(text):
-    text_split = text.split()
-    text_list = list(text_split)
-    text_list.reverse()
-    text_new = " ".join(text_list)
-    return text_new
-
-**************************************************************************************************************************************************************************
-
-'''
-FIND 33:
-Given a list of ints, return True if the array contains a 3 next to a 3 somewhere.
-
-'''
-def has_33(nums):
-    for i in range (0, len(nums)-1):
-        return (nums[i] == 3 and nums[i+1] == 3  )
-
-**************************************************************************************************************************************************************************
-
-'''
-PAPER DOLL: Given a string, return a string where for every character in the original there are three characters
-'''
-def paper_doll(text):
-    result = ''
-    for char in text:
-        result += char*3
-    return result
-
-**************************************************************************************************************************************************************************
-
 '''
 BLACKJACK: Given three integers between 1 and 11, 
 if their sum is less than or equal to 21, return their sum. 
